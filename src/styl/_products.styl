@@ -1,0 +1,45 @@
+.Products
+  background-color: #000
+  min-height: 800px
+  padding: 6rem 3rem
+  position: relative
+  h2
+    color: #fff
+  p
+    color: #fff
+    fs: 1.2rem
+
+.Products__background
+  background-image: url('../img/hero-image.jpg')
+  background-repeat: no-repeat
+  background-size: cover
+  height: 100%
+  left: 0
+  opacity: 0.3
+  +above($breakpoint-tablet)
+    opacity: 0.8
+  position: absolute
+  right: 0
+  top: 0
+  transform: scaleX(-1);
+  z-index: 0
+
+.Products__content
+  margin-top: 6rem
+  +above($breakpoint-tablet)
+    float: right
+    margin-top: 0
+    width: 40%
+  position: relative
+
+
+.Product--left
+  float: left
+.Product--right
+  float: right
+.Product--medium
+  width: 50%
+.Product--full
+  width: 100%
+  img
+    width: 100%

@@ -1,0 +1,67 @@
+doctype html
+html
+	head
+		title Sennobia
+		meta(charset='UTF-8')
+		meta(http-equiv='X-UA-Compatible', content='IE=edge')
+		meta(name='description' content="meta desc")
+		meta(name='viewport' content='width=device-width, initial-scale=1.0')
+		link(rel="stylesheet", type="text/css", href="css/main.css")
+
+	body
+
+		//- put your content here
+		header.Page-header
+			.container
+				nav(class='top-nav cf' role='navigation')
+					ul.list-unstyled.grid-flex-container.uppercase
+						label(for="menu-toggle") Menu
+						input(id='menu-toggle' class='menu-toggle' type='checkbox')
+
+						li.grid-flex-cell
+							a(href="") Home
+						li.grid-flex-cell
+							a(href="") About
+						.brand
+						li.grid-flex-cell
+							a(href="") Products
+						li.grid-flex-cell
+							a(href="") Contact
+		
+		section.Product-slider
+			.Product-slide.Product-slide--featured.text-center
+				h2.animate.fade-in-up.uppercase Regenerating Cream
+				p.animate.fade-in-down Prevents fine lines, wrinkles and combats dark circles
+
+
+				button.button.button-large.button-blue.uppercase Purchase 
+				p $69.00 0.5 oz
+		
+		section.About.text-center
+			.container
+				.About__content
+					h2.uppercase Love your skin
+					p Sennobia was created for people like you. We provide you the essential ingredients to combat environmental (and other) factors that lead to our skin's abuse. Make Sennobia a part of your daily skin care regimen and you will notice the Sennobia difference. 
+					
+				h4 Request a free trial today!
+				button.button.button-large.button-gold.uppercase Learn More
+		
+
+		section.Products
+			.Products__background
+			.Products__content
+				h2.uppercase.white Our Products
+				p Our products are designed with you in mind. We pay close attention to the ingredients we use to ensure a rich and luxurious feel before and after use. We offer a full line of facial skin care products that will help maintain as well as rejuvenate your skin.
+		
+		section.Products-gallery
+			.Product--left.Product--medium
+				img(src="img/_rejuv.jpg", alt="")
+			.Product--right.Product--medium
+				img(src="img/_regen.jpg", alt="")
+		
+			.Product--full.Product--large
+				img(src="img/_eye.jpg", alt="")
+				
+
+
+		script(type="text/javascript", src="js/main.js")

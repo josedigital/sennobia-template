@@ -1,0 +1,20 @@
+// colors
+$white = #fff
+
+button
+  box-shadow: 1px 3px 8px rgba($gray-dark, 0.6)
+  click-inset()
+  font-weight: $font-weight-light
+  letter-spacing: 3px
+  margin-bottom: 1rem
+
+.button-blue
+  background-color: $blue-brand
+  &:hover
+    background-color: lighten($blue-brand, 10%)
+
+.button-gold
+  background-color: $gold-brand
+  &:hover
+    background-color: darken($gold-brand, 10%)
+  
