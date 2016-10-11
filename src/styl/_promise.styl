@@ -1,0 +1,37 @@
+.Promise
+  background-color: #000
+  min-height: 800px
+  padding: 6rem 3rem
+  position: relative
+  h2
+    color: $white
+    +above($breakpoint-tablet)
+      color: inherit
+  p
+    color: $white
+    fs: 1.2rem
+    +above($breakpoint-tablet)
+      color: inherit
+
+.Promise__background
+  background-image: url('../img/promise-hero.jpg')
+  background-position: top right
+  background-repeat: no-repeat
+  background-size: cover
+  height: 100%
+  left: 0
+  opacity: 0.3
+  +above($breakpoint-tablet)
+    opacity: 0.8
+  position: absolute
+  right: 0
+  top: 0
+  z-index: 0
+
+.Promise__content
+  margin-top: 6rem
+  position: relative
+  +above($breakpoint-tablet)
+    // margin-top: 0
+    width: 40%
+  

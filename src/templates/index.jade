@@ -50,18 +50,80 @@ html
 		section.Products
 			.Products__background
 			.Products__content
-				h2.uppercase.white Our Products
+				h2.uppercase Our Products
 				p Our products are designed with you in mind. We pay close attention to the ingredients we use to ensure a rich and luxurious feel before and after use. We offer a full line of facial skin care products that will help maintain as well as rejuvenate your skin.
+				p 
+					a(href="#gallery") View all products
 		
-		section.Products-gallery
-			.Product--left.Product--medium
-				img(src="img/_rejuv.jpg", alt="")
-			.Product--right.Product--medium
-				img(src="img/_regen.jpg", alt="")
-		
-			.Product--full.Product--large
-				img(src="img/_eye.jpg", alt="")
-				
+		section.Products-gallery.text-center#gallery
+			.grid-flex-container
+				.grid-flex-cell
+					.Product.Product--left.Product--medium
+						h3.uppercase REJUVENATING CREAM
+						img(src="img/_rejuv.jpg", alt="")
+						p Designed to help enhance, rejuvenate, firmness, uniformity of skin tone, hydration radiance, and tightness of skin to minimize appearance of fine lines and wrinkles on neck and face.
+						p $99.00 - 2.0 OZ
+						button.button.button-blue.uppercase Purchase
 
+				.grid-flex-cell
+					.Product.Product--right.Product--medium
+						h3.uppercase REGENERATING CREAM
+						img(src="img/_regen.jpg", alt="")
+						p Designed to help renew vitality, enhance regeneration, firmness, uniformity of skin tone, hydration, and radiance.
+						p $89.00 - 2.0 OZ
+						button.button.button-blue.uppercase Purchase
+		
+			.grid-flex-container
+				.grid-flex-cell
+					.Product.Product--full.Product--large
+						h3.uppercase EYE CREAM
+						img(src="img/_eye.jpg", alt="")
+						p Eye renewal cream works to minimize puffiness, fine lines, wrinkles and dark circles, firms, tones skin.
+						p $69.00 - 0.5 OZ
+						button.button.button-blue.uppercase Purchase
+
+	
+	
+	
+	section.Promise
+		.Promise__background
+		.Promise__content
+			h2.uppercase Our Promise
+			p The science behind SENNOBIA focuses on a natural Love your skin approach that is effective to make your skin look and feel fresh and youthful. SENNOBIA was formulated using the best ingredients and perfected by expert cosmetic chemists. Our skin care will give you real results in as little as 3 weeks of using it as directed.
+
+
+
+	section.Contact
+		.container
+			form
+				fieldset
+					legend Comment Form
+
+					.grid-flex-container
+						.grid-flex-cell
+							.form-element
+								label(for='name') Your Name
+								input(type='text', id='name', placeholder='Your name', class='form-input')
+						
+						.grid-flex-cell
+							.form-element
+								label(for='email') Your Email
+								input(type='text', id='email', placeholder='Your email', class='form-input')
+
+					.grid-flex-container
+						.grid-flex-cell
+							.form-element
+								label(for='comment') Write a comment
+								textarea(id='comment', class='form-input', placeholder='This is a sample message')
+
+					button(type='submit', class='button button-gold') Send
+
+
+
+
+	footer.text-center
+		.container
+			h6 Handcrafted by Sennobia Cosmetics, LLC &bull; Las Vegas, Nevada
+			p All information copyright &copy; 2016 | Sennobia Cosmetics, LLC
 
 		script(type="text/javascript", src="js/main.js")
