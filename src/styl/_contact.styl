@@ -1,7 +1,10 @@
 .Contact
-  padding: 5rem
+  +above($breakpoint-tablet)
+    padding: 5rem
   form
-    margin: 2rem
+    margin: 0.5rem
+    +above($breakpoint-tablet)
+      margin: 2rem
   legend
     font-family: $font-heading
     font-weight: $font-weight-light

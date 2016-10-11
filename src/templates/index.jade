@@ -11,49 +11,49 @@ html
 	body
 
 		//- put your content here
-		header.Page-header
+		header.Page-header#home
 			.container
 				nav(class='top-nav cf' role='navigation')
+					.is-mobile
+						.brand
 					ul.list-unstyled.grid-flex-container.uppercase
-						label(for="menu-toggle") Menu
-						input(id='menu-toggle' class='menu-toggle' type='checkbox')
-
 						li.grid-flex-cell
-							a(href="") Home
+							a(href="#home") Home
 						li.grid-flex-cell
-							a(href="") About
+							a(href="#about") About
 						.brand
 						li.grid-flex-cell
-							a(href="") Products
+							a(href="#products") Products
 						li.grid-flex-cell
-							a(href="") Contact
+							a(href="#contact") Contact
 		
 		section.Product-slider
 			.Product-slide.Product-slide--featured.text-center
 				h2.animate.fade-in-up.uppercase Regenerating Cream
-				p.animate.fade-in-down Prevents fine lines, wrinkles and combats dark circles
+				p.animate.fade-in-down.is-desktop Designed to help renew vitality, enhance regeneration, firmness, uniformity, uniformity of skin tone, hydration, and radiance.
 
-
-				button.button.button-large.button-blue.uppercase Purchase 
-				p $69.00 0.5 oz
+				
+				a(href="https://squareup.com/store/sennobia-cosmetics/item/regenerating-cream", target="_blank").button.button-large.button-blue.uppercase Purchase 
+				p $89.00 - 2.0 oz
 		
-		section.About.text-center
+		section.About.text-center#about
 			.container
 				.About__content
 					h2.uppercase Love your skin
 					p Sennobia was created for people like you. We provide you the essential ingredients to combat environmental (and other) factors that lead to our skin's abuse. Make Sennobia a part of your daily skin care regimen and you will notice the Sennobia difference. 
 					
 				h4 Request a free trial today!
-				button.button.button-large.button-gold.uppercase Learn More
+				
+				a(href="#contact").js-button.button.button-large.button-gold.uppercase Learn More
 		
 
-		section.Products
+		section.Products#products
 			.Products__background
 			.Products__content
 				h2.uppercase Our Products
 				p Our products are designed with you in mind. We pay close attention to the ingredients we use to ensure a rich and luxurious feel before and after use. We offer a full line of facial skin care products that will help maintain as well as rejuvenate your skin.
 				p 
-					a(href="#gallery") View all products
+					a(href="#gallery").js-button View all products
 		
 		section.Products-gallery.text-center#gallery
 			.grid-flex-container
@@ -63,7 +63,7 @@ html
 						img(src="img/_rejuv.jpg", alt="")
 						p Designed to help enhance, rejuvenate, firmness, uniformity of skin tone, hydration radiance, and tightness of skin to minimize appearance of fine lines and wrinkles on neck and face.
 						p $99.00 - 2.0 OZ
-						button.button.button-blue.uppercase Purchase
+						a(href="https://squareup.com/store/sennobia-cosmetics/item/rejuvenating-cream", target="_blank").button.button-blue.uppercase Purchase
 
 				.grid-flex-cell
 					.Product.Product--right.Product--medium
@@ -71,7 +71,7 @@ html
 						img(src="img/_regen.jpg", alt="")
 						p Designed to help renew vitality, enhance regeneration, firmness, uniformity of skin tone, hydration, and radiance.
 						p $89.00 - 2.0 OZ
-						button.button.button-blue.uppercase Purchase
+						a(href="https://squareup.com/store/sennobia-cosmetics/item/regenerating-cream", target="_blank").button.button-blue.uppercase Purchase
 		
 			.grid-flex-container
 				.grid-flex-cell
@@ -80,7 +80,7 @@ html
 						img(src="img/_eye.jpg", alt="")
 						p Eye renewal cream works to minimize puffiness, fine lines, wrinkles and dark circles, firms, tones skin.
 						p $69.00 - 0.5 OZ
-						button.button.button-blue.uppercase Purchase
+						a(href="https://squareup.com/store/sennobia-cosmetics/item/eye-cream", target="_blank").button.button-blue.uppercase Purchase
 
 	
 	
@@ -89,11 +89,11 @@ html
 		.Promise__background
 		.Promise__content
 			h2.uppercase Our Promise
-			p The science behind SENNOBIA focuses on a natural Love your skin approach that is effective to make your skin look and feel fresh and youthful. SENNOBIA was formulated using the best ingredients and perfected by expert cosmetic chemists. Our skin care will give you real results in as little as 3 weeks of using it as directed.
+			p The science behind SENNOBIA focuses on a natural approach that is effective to make your skin look and feel fresh and youthful. SENNOBIA was formulated using the best ingredients and perfected by expert cosmetic chemists. Our skin care will give you real results in as little as 3 weeks of using it as directed.
 
 
 
-	section.Contact
+	section.Contact#contact
 		.container
 			form
 				fieldset
@@ -126,4 +126,6 @@ html
 			h6 Handcrafted by Sennobia Cosmetics, LLC &bull; Las Vegas, Nevada
 			p All information copyright &copy; 2016 | Sennobia Cosmetics, LLC
 
+		script(src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous")
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js")
 		script(type="text/javascript", src="js/main.js")

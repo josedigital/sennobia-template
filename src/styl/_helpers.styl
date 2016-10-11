@@ -3,3 +3,13 @@
 
 .uppercase
   text-transform: uppercase
+
+.is-mobile
+  display: block
+  +above($breakpoint-tablet)
+    display: none
+
+.is-desktop
+  display: none
+  +above($breakpoint-tablet)
+    display: block
